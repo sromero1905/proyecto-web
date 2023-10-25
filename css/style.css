@@ -17,8 +17,6 @@ body {
 
 body {
     background-color: #5B4D43;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -122,7 +120,7 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(/img/home/file.mp4);
+    background: url(../img/home/file.mp4);
     background-size: cover;
     background-position: center;
     flex-direction: column;
@@ -267,7 +265,7 @@ ul li {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url(/img/home/production_id_5000106\ \(2160p\).mp4);
+        background: url(../img/home/production_id_5000106\ \(2160p\).mp4);
         background-size: cover;
         background-position: center;
         flex-direction: column;
@@ -323,7 +321,7 @@ ul li {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url(/img/CAFE/production_id_4815784\ \(720p\).mp4);
+        background: url(../img/CAFE/production_id_4815784\ \(720p\).mp4);
         background-size: cover;
         background-position: center;
         flex-direction: column;
@@ -353,7 +351,7 @@ ul li {
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url(/img/CAFE/istockphoto-1368262773-1024x1024-transformed.jpeg);
+        background-image: url(../img/CAFE/istockphoto-1368262773-1024x1024-transformed.jpeg);
         background-size: cover;
         background-position: center;
         filter: brightness(70%);
@@ -460,7 +458,7 @@ ul li {
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url(/img/CAFE/pexels-balamurugan-anbazhagan-763097.jpg);
+        background-image: url(../img/CAFE/pexels-balamurugan-anbazhagan-763097.jpg);
         background-size: cover;
         background-position: center;
         filter: brightness(70%);
@@ -479,7 +477,7 @@ ul li {
 
     /* pagina 2(maquinas) */
     .ofertaMaq {
-        background: url(/img/maquinas/pexels-yifan-tang-15429673.jpg);
+        background: url(../img/maquinas/pexels-yifan-tang-15429673.jpg);
         background-size: cover;
         background-position: center;
         flex-direction: column;
@@ -613,7 +611,7 @@ ul li {
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url(/img/accesorios/pexels-nao-triponez-129207.jpg);
+        background-image: url(../img/accesorios/pexels-nao-triponez-129207.jpg);
         background-size: cover;
         background-position: center;
         filter: brightness(70%);
