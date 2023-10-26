@@ -687,6 +687,28 @@ ul li {
     .producto-info button:hover {
         color: gray;
     }
+    @media screen and (max-width: 768px) {
+        .contenedor {
+            grid-template-columns: 1fr; 
+        }
+    
+        .producto {
+            margin-bottom: 20px; 
+        }
+    
+        .producto-img {
+            height: auto; 
+        }
+    
+        .producto-info h3 {
+            font-size: 1.2em; 
+        }
+    
+        .producto-info p {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+    }
 
 
     /* pagina 4(experiencias) */
@@ -981,7 +1003,7 @@ ul li {
     }
     @media (max-width: 768px) {
         .map {
-            width: 100%; 
+            width: 110%; 
             height: 300px; 
         }
     
