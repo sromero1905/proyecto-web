@@ -1085,7 +1085,7 @@ ul li {
     }
 
     /* LARGE SIZE */
-    @media(max-width: 700px) {
+    @media(max-width: 200px) {
        
         .contact-wrapper {
             display: grid;
