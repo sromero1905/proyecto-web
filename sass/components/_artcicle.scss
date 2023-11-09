@@ -1,0 +1,210 @@
+.ofertaInicio {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/home/file-2.mp4);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+.textoOfertaInicio {
+    color: white;
+    text-align: center;
+    font-size: small;
+
+}
+
+
+.textoOfertaInicio1 {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .textoOfertaInicio {
+        font-size: 13px; 
+    }
+
+    .textoOfertaInicio1 {
+        font-size: 22px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .card-group {
+        text-align: center;
+    }
+    .card {
+        max-width: 300px;
+      
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        padding: 20px;
+    }
+}
+/* seccion general de cafe maquinas y accesorios  */
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card {
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 450px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+
+
+     @media (max-width: 758px) {
+        min-height: 350px;
+    }
+
+    @media (max-width: 420px) {
+        min-height: 300px;
+    }
+
+    &.card-has-bg {
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: inherit;
+            -webkit-filter: grayscale(1);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+
+        &:hover {
+            transform: scale(0.98);
+            box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+            background-size: 130%;
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+            .card-img-overlay {
+                transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+                background: rgb(91, 77, 67, 1);
+                background: linear-gradient(0deg, rgba(173, 121, 35, 0.5) 0%, rgba(255, 242, 198, 1) 90%);
+            }
+        }
+    }
+
+
+
+    .card-title {
+        font-weight: 800
+    }
+
+    .card-meta {
+        color: rgba(0, 0, 0, 0.3);
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+    .card-body {
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+
+    }
+
+    &:hover {
+        .card-body {
+            margin-top: 30px;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        cursor: pointer;
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .card-img-overlay {
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        background: rgb(206, 200, 186, 1);
+        background: linear-gradient(0deg, rgba(255, 186, 33, 0.1) 0%, rgba(206, 200, 186, 1) 100%);
+    }
+
+    .botonSeccion {
+        font-size: 16px;
+        color: rgba(72, 49, 14, 1);
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    @media (max-width: 990px) {}
+
+}
+    /* titulo e info de la seccion ecologica */
+    .videEco {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../img/home/production_id_5000106\ \(2160p\).mp4);
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    .tituloEco {
+        color: #282626;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .titulo1 {
+        font-size: 20px;
+        padding-top: 40px;
+    }
+
+    .subEco {
+        color: #282626;
+        text-align: center;
+        font-size: large;
+    }
+
+
+    .foto1,
+    .foto2 {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .foto1 {
+        height: 470px;
+        width: 370px;
+    } 
+
+     .foto2 {
+        height: 450px;
+        width: 370px;
+    } 

@@ -1,0 +1,118 @@
+.tituloAcc {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tituloAcc::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/accesorios/pexels-nao-triponez-129207.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+    z-index: -1;
+}
+
+.tituloAcc h2 {
+    color: white;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-gap: 30px;
+
+    max-width: 800px;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.producto {
+    position: relative;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.producto-img {
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+}
+
+.producto-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    padding-bottom: 10px;
+}
+
+.producto-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.producto-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.producto-info p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.producto-info button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-info button:hover {
+    color: gray;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr; 
+         
+    }
+
+    .producto {
+        margin-bottom: 20px; 
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .producto-img {
+        height: auto; 
+    }
+
+    .producto-info h3 {
+        font-size: 1.2em; 
+    }
+
+    .producto-info p {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+}

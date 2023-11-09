@@ -1,0 +1,88 @@
+h1 {
+    color: whitesmoke;
+    font-size: 25px
+}
+
+.logo {
+    height: 200px;
+    text-align: start;
+}
+
+
+.titulo {
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 30px;
+}
+
+/* menu de navegacion */
+.botonNav:hover,
+.botonNav:focus {
+    background-color: #695E54;
+    border-color: #695E54;
+    transform: scale(1.1);
+}
+
+.menuNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    margin: 7px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0 50px;
+    color: gray;
+}
+
+.aMenu {
+    text-decoration: none;
+    color: gray;
+}
+
+.aMenu:hover {
+    color: black;
+}
+
+.navbar {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar {
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-nav .nav-link:hover {
+    background: none;
+    color: black;
+}
+
+ .navbar-nav .nav-link:hover {
+    text-decoration: none;
+}
+
+/* recuadro de envio gratis */
+.recuadroHeader {
+    padding: 25px;
+    border: 5px solid #282626;
+    background-color: #282626;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 3px;
+    width: 100%;
+}

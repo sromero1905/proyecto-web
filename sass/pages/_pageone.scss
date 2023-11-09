@@ -1,0 +1,167 @@
+
+    /* pagina 1 (cafe) */
+
+    /* VIDEO INICIO  */
+    .tituloCafe {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../img/CAFE/production_id_4815784\ \(720p\).mp4);
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        color: white;
+        text-align: center;
+        font-size: xx-large;
+        letter-spacing: 2px;
+    }
+
+
+    /* CAPSULAS */
+    .introCaps {
+        position: relative;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .introCaps::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/CAFE/istockphoto-1368262773-1024x1024-transformed.jpeg);
+        background-size: cover;
+        background-position: center;
+        filter: brightness(70%);
+        z-index: -1;
+    }
+
+    .tituloCaps {
+        color: whitesmoke;
+    }
+    
+
+    .subCaps {
+        display: inline-block;
+        width: 50%;
+        word-wrap: break-word;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+    }
+    @media (max-width: 768px) {
+        .subCaps {
+            display: none; 
+        }
+    }
+
+    /* capsulas y cafe en granos*/
+    .lisrCard {
+        list-style-type: none;
+        margin-left: 37%;
+        padding: 0;
+    }
+
+    .rating {
+        margin-left: 37%;
+    }
+
+    .page {
+
+        padding: 2%;
+        margin: auto;
+    }
+
+    .card-img-top {
+        width: 90%;
+        height: 100%;
+    }
+
+    .view {
+        background-color: #dfe6e0;
+        padding: 10px;
+        margin: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 0px;
+        height: 100%;
+        margin-left: 2%;
+    }
+
+
+
+    .price {
+        color: #333333;
+        font-weight: 600;
+    }
+
+
+
+    .boton {
+        font-size: 13px;
+        color: #333333;
+        border-radius: 100px;
+        background-color: transparent;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .boton:hover,
+    .boton:focus {
+        background-color: gray;
+        border-color: #fafafa;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    }
+
+    
+    /* cafe en granos */
+    .tituloCafeGr {
+        position: relative;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+    }
+   
+
+    .tituloCafeGr::after {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/CAFE/pexels-balamurugan-anbazhagan-763097.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: brightness(70%);
+        z-index: -1;
+    }
+
+
+ @media (max-width: 768px) {
+        .tituloCafeGr {
+            font-size: large; 
+        }
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+    }

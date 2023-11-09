@@ -1,0 +1,24 @@
+@import './base/resets';
+
+/*  header*/
+@import './layout/header';
+
+/*  pagina home*/
+@import'./components/artcicle';
+
+/* primera pagina (cafe)*/
+@import'./pages/pageone';
+
+/* segunda pagina (maquinas)*/
+@import'./pages/pagetwo';
+
+/* tercera pagina (accesorios)*/
+@import'./pages/pagethree';
+
+
+/* cuarta pagina (experiencias)*/
+@import'./pages/pagefour';
+
+
+/* quinta pagina (contacto)*/
+@import'./pages/contact'
