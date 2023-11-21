@@ -111,7 +111,7 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(/img/home/file-2.mp4);
+  background: url(../img/home/file-2.mp4);
   background-size: cover;
   background-position: center;
   flex-direction: column;
@@ -163,6 +163,7 @@ ul li {
   border-radius: 20px;
   min-height: 450px;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  
 }
 @media (max-width: 758px) {
   .card {
@@ -239,13 +240,14 @@ ul li {
 /* titulo e info de la seccion ecologica */
 .videEco {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: url(../img/home/production_id_5000106\ \(2160p\).mp4);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -267,24 +269,75 @@ ul li {
   font-size: large;
 }
 
-.foto1,
-.foto2 {
-  max-width: 80%;
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  background-color:  #333333;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.card-custom {
+  width: 350px;
+  height: 550px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin: 10px 50px;
+}
+
+.card-custom:hover {
+  transform: scale(1.02);
+}
+
+.card-custom .card-img-top {
+  width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  object-fit: cover;
 }
 
-.foto1 {
-  height: 470px;
-  width: 370px;
+.card-custom .card-body {
+  padding: 20px;
 }
 
-.foto2 {
-  height: 450px;
-  width: 370px;
+.card-custom .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-custom .card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.card-custom {
+  background-color: #f8f8f8;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-custom {
+    width: 70%;
+    margin: 10px 0;
+  }
 }
 
 /* primera pagina (cafe)*/
@@ -292,7 +345,7 @@ ul li {
 /* VIDEO INICIO  */
 .tituloCafe {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -318,6 +371,7 @@ ul li {
   flex-direction: column;
 }
 
+
 .introCaps::after {
   content: "";
   position: absolute;
@@ -325,12 +379,13 @@ ul li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/CAFE/istockphoto-1368262773-1024x1024-transformed.jpeg);
+  background-image: url(../img/CAFE/pexels-bess-hamiti-36487.jpg);
   background-size: cover;
   background-position: center;
   filter: brightness(70%);
   z-index: -1;
 }
+
 
 .tituloCaps {
   color: whitesmoke;
@@ -363,7 +418,9 @@ ul li {
 
 .page {
   padding: 2%;
+  
   margin: auto;
+  
 }
 
 .card-img-top {
@@ -634,10 +691,13 @@ button {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.producto-info button:hover {
-  color: gray;
+.producto-info button:hover,
+.producto-info button:focus{
+  background-color: gray;
+  border-color: #fafafa;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 @media screen and (max-width: 768px) {
   .contenedor {
@@ -867,7 +927,58 @@ button {
   height: auto;
   margin-top: 20px;
 }
+/* Estilos para la sección de preguntas frecuentes */
+.faq {
+  padding: 80px 0;
+  background-color: #1a1a1a;
+}
 
+.faq .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.faq .faq-item {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.faq .faq-item:hover {
+  transform: translateY(-5px);
+}
+
+.faq .faq-item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.faq .faq-item p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #b3b3b3;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* quinta pagina (contacto)*/
 .styled-select {
   width: 100%;
@@ -1019,11 +1130,14 @@ button {
   border: 0;
   text-transform: uppercase;
   padding: 1em;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background-color: #696969;
+  background-color: #404040;
+  border-color: #fafafa;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .contact-info {
@@ -1090,3 +1204,4 @@ button {
 }
 
 /*# sourceMappingURL=main.css.map */
+
