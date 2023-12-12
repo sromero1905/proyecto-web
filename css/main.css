@@ -429,10 +429,10 @@ ul li {
 }
 
 .view {
-  background-color: #dfe6e0;
+  background-color: white;
   padding: 10px;
   margin: 20px;
-  border: 1px solid #ccc;
+  border: 0.5px solid gray;
   border-radius: 10px;
 }
 
@@ -462,6 +462,16 @@ ul li {
   border-color: #fafafa;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .cards {
+    margin-bottom: 20px; 
+  }
+}
+
 
 /* cafe en granos */
 .tituloCafeGr {
@@ -649,24 +659,30 @@ button {
   background: #f9f9f9;
   border-radius: 10px;
   overflow: hidden;
+  
 }
 
 .producto-img {
   width: 100%;
   height: 300px;
   overflow: hidden;
+  height: 400px;
+  
 }
 
 .producto-img img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
-  padding-bottom: 10px;
+  object-fit: cover;
+  position: absolute;
+ bottom: 40px;
 }
 
 .producto-info {
   padding: 20px;
   text-align: left;
+  
 }
 
 .producto-info h3 {
@@ -698,25 +714,40 @@ button {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-
 @media screen and (max-width: 768px) {
   .contenedor {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
+    padding: 20px; 
+    width: 500px;
+   
   }
   .producto {
+    margin-bottom: 20px; 
+    width: calc(100% - 20px); 
     margin-bottom: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
   }
   .producto-img {
-    height: auto;
+    height: 300px; 
+    position: relative; 
+  }
+  .producto-img img {
+    
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  .producto-info {
+    padding: 15px;
   }
   .producto-info h3 {
-    font-size: 1.2em;
+    font-size: 1.2em; 
   }
   .producto-info p {
-    font-size: 0.9em;
+    font-size: 0.9em; 
     margin-bottom: 10px;
+  }
+  .producto-info button {
+    font-size: 0.9em; 
   }
 }
 /* cuarta pagina (experiencias)*/
@@ -931,6 +962,7 @@ button {
 .faq {
   padding: 80px 0;
   background-color: #1a1a1a;
+  
 }
 
 .faq .section-title h2 {
@@ -939,6 +971,9 @@ button {
   margin-bottom: 20px;
   color: #fff;
   animation: fadeInUp 0.5s ease-in-out;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
 }
 
 .faq .faq-item {
@@ -949,6 +984,7 @@ button {
   text-align: center;
   margin-bottom: 30px;
   transition: transform 0.2s ease-in-out;
+  height: 260px;
 }
 
 .faq .faq-item:hover {
@@ -998,10 +1034,65 @@ button {
 }
 
 .contact-section {
-  background: #f7f7f7;
   text-align: center;
-  padding: 30px;
-  padding-bottom: 60px;
+  padding: 50px 0;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.content-vid{
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content-vid h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.content-vid p {
+  font-size: 1.1em;
+  color: #2c2c2c;
+  margin-bottom: 40px;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 750px; 
+  margin-left: 70px;
+}
+
+.section-video {
+  width: 2000px;
+  height: 750px;
+  max-width: 2000px;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Estilos para hacer responsive */
+@media screen and (max-width: 768px) {
+  .content h2 {
+      font-size: 2em;
+  }
+  .content p {
+      font-size: 1em;
+  }
+  .video-wrapper{
+    padding-bottom: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+  }
+  
 }
 
 .section-title {
@@ -1016,10 +1107,6 @@ button {
   margin-bottom: 20px;
 }
 
-.section-video {
-  width: 90%;
-  height: 90%;
-}
 
 .boutique-info-container {
   display: flex;
@@ -1060,13 +1147,15 @@ button {
 .boutique-address {
   font-size: 1.2em;
   color: #666666;
-  width: 48%;
+  width: 50%;
 }
 
 @media (max-width: 768px) {
+  
   .map {
-    width: 110%;
+    width: 100%;
     height: 300px;
+    max-width: 100%;
   }
   .boutique-address {
     width: 100%;
@@ -1192,6 +1281,9 @@ button {
   color: white;
   text-align: center;
 }
+.copyright{
+  background-color: rgba(0, 0, 0, 0.05);
+}
 
 /* medias queries para videos de fondo */
 @media (max-width: 768px) {
@@ -1202,6 +1294,7 @@ button {
     height: 50vh;
   }
 }
+
 
 /*# sourceMappingURL=main.css.map */
 
